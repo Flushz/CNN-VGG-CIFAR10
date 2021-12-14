@@ -93,7 +93,7 @@ def run_test_harness():
     # fit model
 
     history = model.fit(trainX, trainY, epochs=100, batch_size=64,
-                        validation_data=(testX, testY), verbose=0)
+                        validation_data=(testX, testY), verbose=1)
 
     # evaluate model
     _, acc = model.evaluate(testX, testY, verbose=0)
